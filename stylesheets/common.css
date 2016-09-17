@@ -18,7 +18,11 @@ ul {
 a {
 	text-decoration: none;
 }
-
+p {
+	margin: 0;
+	line-height: 1.6em;
+	padding-bottom: 0.5em;
+}
 .center {
 	width: 80%;
 	margin-left: auto;
@@ -27,6 +31,18 @@ a {
 
 section {
 	margin-top: 40px;
+}
+
+article {
+	padding:0 1.875em;
+	margin-top: 30px;
+}
+
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
 }
 
 /*每节标题*/
@@ -55,7 +71,7 @@ section h1:after {
 	border-width: 18px;
 }
 
-/*每节被选中后*/
+/*目标区域高亮*/
 section:target {
 	animation: fade 1.5s ease-in;
 }
@@ -70,3 +86,43 @@ section:target {
 	20%{background: rgba(255,250,185,1);}
 	100%{background: none;}
 }
+
+/*图片边框*/
+img {
+	
+	padding: 5px;
+	padding-bottom: 30px;
+	box-shadow: 3px 6px 8px #999;
+}
+
+/*段落层次*/
+.step-two {
+	padding-left: 2.25em;/*36px*/
+}
+
+.step-three {
+	padding-left: 4.5em;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+/*模拟纸背景*/
+aside {
+	line-height: 2em;
+	/*可伸缩背景*/
+	background: url(../images/paperlines.gif);
+	background-size: auto 2em;
+	/*图片边框*/
+	border-left-width: 50px;
+	border-style: solid;
+	border-image: url(../images/edge.png) 0 0 0 50 repeat;
+	background-clip: padding-box;
+
+	box-shadow: 3px 3px 7px #ccc;
+	font-weight: bold;
+	color: #3d1a1b;
+	margin-bottom: 0.5em;
+}
+
