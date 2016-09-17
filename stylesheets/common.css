@@ -124,5 +124,8 @@ aside {
 	font-weight: bold;
 	color: #3d1a1b;
 	margin-bottom: 0.5em;
+
+	/*居中*/
+	margin: 0 auto;
 }
 

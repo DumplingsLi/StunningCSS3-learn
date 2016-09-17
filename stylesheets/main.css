@@ -131,33 +131,48 @@ img[alt=pic2] {
 	height: 342px;
 }
 img[alt=pic3] {
-	width: 216px;
-	height: 360px;
+	width: 196px;
+	height: 320px;
 }
 img[alt=pic4] {
-	width: 464px;
-	height: 296px;
+	width: 348px;
+	height: 190px;
 }
 img[alt=pic5] {
-	width: 300px;
-	height: 380px;
+	width: 256px;
+	height: 340px;
 }
 img[alt=pic6] {
-	width: 306px;
-	height: 438px;
+	width: 285px;
+	height: 380px;
 }
+
 /*第一节*/
-
-/*1*/
-
-	
 .article1-width {
 	width: 37.5em;/*600px*/
 }
 
+.article2-width {
+	width: 555px;
+}
 
+.article3-width {
+	width: 396px;
+	height: 330px;
+}
 
-/*2*/ 
+/*第二节*/
+.article4-width {
+	width: 522px;
+	height: 400px;
+} 
 
+/*第三节*/
+.article5-width {
+	width: 652px;
+}
 
-/*3*/ 
+/*第四节*/
+.article6-width {
+	width: 464px;
+}
