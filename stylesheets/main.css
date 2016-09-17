@@ -1,0 +1,94 @@
+/*header*/
+header {
+	text-align: center;
+	margin-top: 55px;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+header h2 {
+	text-align: right;
+}
+
+h1,h2 {
+	color: #3d1a1b;
+}
+h1 {
+	font-size: 3.125em;/*50px*/
+	font-family: "Raleway";
+}
+
+h2 {
+	font-size: 1.25em;/*20px*/
+	line-height: 2em;
+	font-family: "Brush Script Std";
+}
+
+/*nav*/
+nav {
+	display: -moz-box;
+	display: -o-box;
+	display: -webkit-box;
+	display: box;
+	-moz-box-orient: horizontal;
+	-o-box-orient: horizontal;
+	-webkit-box-orient: horizontal;
+	box-orient: horizontal;
+	-moz-box-align: center;
+	-o-box-align: center;
+	-webkit-box-align: center;
+	box-align: center;
+}
+
+nav ul {
+	font-size: 1.125em;/*18px*/
+	counter-reset: list;
+	padding: 20px 0;
+}
+nav li {
+	float: left;	
+	padding-right: 3.75em;/*60px*/
+	counter-increment: list;
+}
+nav li:before {
+	content: counter(list);
+	float: left;
+	width: 1.4em;
+	height: 1.4em;
+	border-radius: 0.7em;
+	background-color: #3d1a1b;
+	color: #fff;
+	text-align: center;
+}
+nav li:last-child {
+	margin-right: 0;
+}
+nav a {
+	color: #3d1a1b;
+	padding-left: 5px;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+nav form {
+	-moz-box-flex: 1;
+	-o-box-flex: 1;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+	text-align: right;
+}
+nav input[type=text] {
+	text-indent: 8px;
+	width: 200px;
+	height: 20px;
+	border: 2px solid #3d1a1b;
+	border-radius: 5px;
+}
+
+
+/*第一节*/
+
+
