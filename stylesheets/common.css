@@ -93,7 +93,9 @@ section:target {
 img {
 	padding: 5px;
 	padding-bottom: 30px;
+	margin: 0 2em;
 	box-shadow: 3px 6px 8px #999;
+	max-width: 100%;
 }
 
 

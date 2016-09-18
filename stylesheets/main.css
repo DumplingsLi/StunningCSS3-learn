@@ -1,7 +1,7 @@
 /*header*/
 header {
 	text-align: center;
-	margin-top: 55px;
+	margin-top: 3.45em;
 	width: -webkit-fit-content;
 	width: -moz-fit-content;
 	width: fit-content;
@@ -46,11 +46,11 @@ nav {
 nav ul {
 	font-size: 1.125em;/*18px*/
 	counter-reset: list;
-	padding: 20px 0;
+	padding: 1.25em 0;
 }
 nav li {
 	float: left;	
-	padding-right: 3.75em;/*60px*/
+	padding-right: 1.5em;/*3.75em60px*/
 	counter-increment: list;
 }
 nav li:before {
@@ -82,7 +82,7 @@ nav form {
 }
 nav input[type=text] {
 	text-indent: 8px;
-	width: 14em;/*200px*/
+	width: 12.5em;/*200px*/
 	height: 30px;
 	border: 2px solid #3d1a1b;
 	border-radius: 5px;
@@ -95,48 +95,46 @@ nav input[type=text]:focus {
 
 /*图片大小*/
 img[alt=pic1] {
-	width: 16.19em;
-	height: 14.94em;
 	-moz-transform: rotate(2deg);
 	-o-transform: rotate(2deg);
 	-webkit-transform: rotate(2deg);
 	transform: rotate(2deg);
 }
 img[alt=pic2] {
-	width: 226px;
-	height: 342px;
+	/*width: 14.125em;
+	height: 21.375em;*/
 	-moz-transform: rotate(-2deg);
 	-o-transform: rotate(-2deg);
 	-webkit-transform: rotate(-2deg);
 	transform: rotate(-2deg);
 }
 img[alt=pic3] {
-	width: 196px;
-	height: 320px;
+	/*width: 12.25em;
+	height: 20em;*/
 	-moz-transform: rotate(1deg);
 	-o-transform: rotate(1deg);
 	-webkit-transform: rotate(1deg);
 	transform: rotate(1deg);
 }
 img[alt=pic4] {
-	width: 348px;
-	height: 190px;
+	/*width: 21.75em;
+	height: 11.875em;*/
 	-moz-transform: rotate(-3deg);
 	-o-transform: rotate(-3deg);
 	-webkit-transform: rotate(-3deg);
 	transform: rotate(-3deg);
 }
 img[alt=pic5] {
-	width: 256px;
-	height: 340px;
+	/*width: 16em;
+	height: 21.25em;*/
 	-moz-transform: rotate(2deg);
 	-o-transform: rotate(2deg);
 	-webkit-transform: rotate(2deg);
 	transform: rotate(2deg);
 }
 img[alt=pic6] {
-	width: 285px;
-	height: 380px;
+	/*width: 17.8125em;
+	height: 23.75em;*/
 	-moz-transform: rotate(-1deg);
 	-o-transform: rotate(-1deg);
 	-webkit-transform: rotate(-1deg);
@@ -145,7 +143,8 @@ img[alt=pic6] {
 
 /*第一节*/
 .article1-width {
-	width: 37.5em;
+	/*width: 37.5em;*/
+	width: 60%;
 }
 
 .article2-width {
@@ -172,6 +171,7 @@ img[alt=pic6] {
 	border-radius: 0.5em;
 	box-shadow: 3px 3px 3px #ccc;
 	text-shadow: 1px 1px 1px #999;
+	word-wrap: break-word;
 }
 #tip:before {
 	position: absolute;
@@ -213,4 +213,74 @@ img[alt=pic6] {
 footer{
 	text-align: center;
 	margin: 55px auto;
+}
+
+
+/*------------------*/
+@media screen and (min-width: 1200px) {
+	nav li {
+		padding-right: 3.75em;
+	}
+}
+
+@media screen and (max-width: 870px) {
+	nav {
+		-moz-box-orient: vertical;
+		-o-box-orient: vertical;
+		-webkit-box-orient: vertical;
+		box-orient: vertical;
+		-moz-box-align: stretch;
+		-o-box-align: stretch;
+		-webkit-box-align: stretch;
+		box-align: stretch;
+	}
+	nav form {
+		text-align: left;
+	}
+	nav input[type=text] {
+		width: 100%;
+	}
+	nav li {
+		width: 25%;
+		padding: 0;
+	}
+	
+}
+
+@media screen and (max-width: 760px) {
+	header h1 {
+		font-size: 2.5em;
+	}
+	header h2 {
+		font-size: 1em;
+	}
+	
+	
+}
+@media screen and (max-width: 630px) {
+	nav li {
+		width: 50%;
+		padding-bottom: 0.5em;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	header h1 {
+		font-size: 1.8em;
+	}
+	header h2 {
+		font-size: 0.8em;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	header h1 {
+		font-size: 1.5em;
+	}
+	header h2 {
+		font-size: 0.5em;
+	}
+	nav li {
+		width: 100%;
+	}
 }
