@@ -93,63 +93,59 @@ nav input[type=text]:focus {
 	outline: none;
 }
 
-
-/*纸片*/
-.page-one {
-	width: 19em;
-	margin-left: 9em;
-}
-.page-two {
-	width: 25.8em;
-}
-.page-three {
-	width: 18.125em;
-}
-.page-four {
-	width: 25.625em;
-}
-.page-five {
-	width: 14.25em;
-}
-.page-six {
-	width: 31.75em;
-}
-.page-seven {
-	width: 13.125em;
-}
-.page-eight {
-	width: 13.5em;
-}
-
 /*图片大小*/
 img[alt=pic1] {
 	width: 16.19em;
 	height: 14.94em;
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-webkit-transform: rotate(2deg);
+	transform: rotate(2deg);
 }
 img[alt=pic2] {
 	width: 226px;
 	height: 342px;
+	-moz-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
 }
 img[alt=pic3] {
 	width: 196px;
 	height: 320px;
+	-moz-transform: rotate(1deg);
+	-o-transform: rotate(1deg);
+	-webkit-transform: rotate(1deg);
+	transform: rotate(1deg);
 }
 img[alt=pic4] {
 	width: 348px;
 	height: 190px;
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-webkit-transform: rotate(-3deg);
+	transform: rotate(-3deg);
 }
 img[alt=pic5] {
 	width: 256px;
 	height: 340px;
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-webkit-transform: rotate(2deg);
+	transform: rotate(2deg);
 }
 img[alt=pic6] {
 	width: 285px;
 	height: 380px;
+	-moz-transform: rotate(-1deg);
+	-o-transform: rotate(-1deg);
+	-webkit-transform: rotate(-1deg);
+	transform: rotate(-1deg);-
 }
 
 /*第一节*/
 .article1-width {
-	width: 37.5em;/*600px*/
+	width: 37.5em;
 }
 
 .article2-width {
@@ -161,18 +157,60 @@ img[alt=pic6] {
 	height: 330px;
 }
 
+.section-small {
+	padding: 20px 0 40px 0;
+}
+
+#tip {
+	position: relative;
+	margin-top: 40px;
+	background-image: -moz-linear-gradient(rgba(61,26,27,0.5), rgba(61,26,27,0) 30px);
+	background-image: -webkit-gradient(linear,0 0 , 0 60,
+		from(rgba(61,26,27,0.5)), to(rgba(61,26,27,0))
+		);
+	padding: 1.2em;
+	border-radius: 0.5em;
+	box-shadow: 3px 3px 3px #ccc;
+	text-shadow: 1px 1px 1px #999;
+}
+#tip:before {
+	position: absolute;
+	top: 0.5em;
+	left: -2.5em;
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border: 1.25em solid transparent;
+	border-right-color: rgba(61,26,27,0.2);
+}
+#tip:hover {
+	top: -0.2em;
+	left: -0.2em;
+}
+
 /*第二节*/
 .article4-width {
 	width: 522px;
-	height: 400px;
 } 
 
 /*第三节*/
 .article5-width {
 	width: 652px;
 }
+#chapter3 aside {
+	margin-right: auto;
+	margin-left: auto;
+}
 
 /*第四节*/
 .article6-width {
 	width: 464px;
+}
+
+
+/*footer*/
+footer{
+	text-align: center;
+	margin: 55px auto;
 }

@@ -40,9 +40,11 @@ article {
 
 .pull-left {
 	float: left;
+	margin: 0 4em 0 2em;
 }
 .pull-right {
 	float: right;
+	margin-right: 8em;
 }
 
 /*每节标题*/
@@ -89,19 +91,19 @@ section:target {
 
 /*图片边框*/
 img {
-	
 	padding: 5px;
 	padding-bottom: 30px;
 	box-shadow: 3px 6px 8px #999;
 }
 
+
 /*段落层次*/
 .step-two {
-	padding-left: 2.25em;/*36px*/
+	margin-left: 2.25em;/*36px*/
 }
 
 .step-three {
-	padding-left: 4.5em;
+	margin-left: 4.5em;
 }
 
 .inline-block {
@@ -123,9 +125,11 @@ aside {
 	box-shadow: 3px 3px 7px #ccc;
 	font-weight: bold;
 	color: #3d1a1b;
-	margin-bottom: 0.5em;
+	margin-top: 1.6em;
+	margin-bottom: 1.6em;
 
-	/*居中*/
-	margin: 0 auto;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
 }
 
