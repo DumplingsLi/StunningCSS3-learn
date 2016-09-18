@@ -29,7 +29,6 @@ h2 {
 
 /*nav*/
 nav {
-	display: -moz-box;
 	display: -o-box;
 	display: -webkit-box;
 	display: box;
